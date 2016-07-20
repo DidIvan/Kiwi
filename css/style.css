@@ -17,55 +17,76 @@ body {
     height: 100%;
     width: 100%;
     background: #fefefe;
-    font-family: Myriad Pro Regular, Arial,sans-serif;
+    font-family: Myriad Pro Regular, Arial, sans-serif;
 }
 
 .clearfix:after {
-    content: " ";
-    display: table;
-    clear: both;
+    content: "."; /* добавить содержимое: "." */
+    display: block;  /* сделать блоком, т.к. inline не может иметь clear */
+    clear: both;  /* с обеих сторон clear */
+    visibility: hidden; /* сделать невидимым, зачем нам точка внизу? */
+    height: 0;  /* сделать высоту 0, чтобы не занимал место */
 }
+
 
 .maxw {
     margin: 0 auto;
     min-width: 320px;
-    max-width: 1600px;
+    max-width: 990px;
 }
+
 /*Header start*/
 header {
     min-width: 320px;
     width: 100%;
     height: 230px;
-    background: #74C9FF;
+    background: #ffffff;
 }
-nav{
+
+.header {
+    height: 183px;
+}
+.header div{
+    float: left;
+}
+
+nav {
     background: #ff8400;
     width: 100%;
     height: 48px;
+    color: #ffffff;
 }
-nav ul{
-    margin: 16px 208px 16px 300px;
+
+nav ul {
+    line-height: 1.9;
 }
-nav li{
-    margin-right: 23px;
-    float: left;
-    color:#ffffff;
+
+nav li {
+    position: relative;
+    display: inline-block;
+
 }
-nav li:first-child{
+
+nav li:first-child {
     list-style: none;
 }
-nav li a{
+
+nav li a {
+    display: inline-block;
     text-decoration: none;
-    font-size: 20px;
-    color:#ffffff;
+    font-size: 1.25em;
+    color: #ffffff;
+    padding: 5px 10px;
+    width: 100%;
 }
+
 /*Header end*/
 #wrapper {
     position: relative;
     margin: 0 auto;
     height: auto !important;
     height: 100%;
-    /*min-height: 100%;  -  Нужно для прижатия футера к низу*/
+    min-height: 100%; /* -  Нужно для прижатия футера к низу*/
     padding: 5px 0;
 }
 
@@ -119,21 +140,39 @@ article {
     background: #E86A3B;
     min-height: 350px;
 }*/
-
-footer {
+/*Begin Footer*/
+/*footer {
     margin: -220px auto 0;
     width: 100%;
     min-width: 240px;
     height: 220px;
     background: #AFBFC6;
     position: relative;
+}*/
+footer {
+    position: relative;
+    background: #2f343b;
+    width: 100%;
+    height: 150px;
+    color: #000000;
 }
-
+.foot-logo, .foot-list1, .foot-list2{
+    float: left;
+}
+.foot-list3{
+    float: right;
+}
+.foot-logo img{
+    max-width: 100%;
+    height:auto;
+    margin: 43px 0 44px 0;
+}
+/*Footer end*/
 /* Для отображения на устройствах меньше 980px*/
-@media screen and (min-width:240px) and (max-width:479px) {
+@media screen and (min-width: 240px) and (max-width: 479px) {
 
     main {
-        padding:10px;
+        padding: 10px;
     }
 
     #s_left {
@@ -153,10 +192,10 @@ footer {
     }
 }
 
-@media screen and (min-width:480px) and (max-width:799px) {
+@media screen and (min-width: 480px) and (max-width: 799px) {
 
     main {
-        padding:10px;
+        padding: 10px;
     }
 
     #s_left {
@@ -176,10 +215,10 @@ footer {
     }
 }
 
-@media screen and (min-width:800px) and (max-width:979px) {
+@media screen and (min-width: 800px) and (max-width: 979px) {
 
     main {
-        padding:10px;
+        padding: 10px;
     }
 
     #s_left {
