@@ -1,6 +1,5 @@
 (function ($) {
     $(function () {
-
         $('ul.tabs-list').on('click', 'li:not(.active)', function () {
             $(this)
                 .addClass('active').siblings().removeClass('active')

@@ -125,7 +125,7 @@ nav li a {
     height: auto !important;
     height: 100%;
     min-height: 100%; /* -  Нужно для прижатия футера к низу*/
-    padding: 5px 0;
+    /*padding: 5px 0;*/
 }
 
 .section {
@@ -163,17 +163,47 @@ article {
 .clients {
     background-color: #fdc029;
 }
-
+.clients h2{
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 2.1875em;/*35/16*/
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    padding: 43px 0 28px 0;
+}
+.clients span{
+    display: block;
+    font-size: 1.375em; /*22/16*/
+    text-align: center;
+    padding-bottom: 55px;
+}
 .tabs li {
-    display: inline-block;
-    width: 25%;
+    display: block;
+    float: left;
     cursor: pointer;
-    margin-right: -5px;
+    font-size: 1.375em; /*22/16*/
+    line-height: 1.6;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 44px;
+}
+.tabs li:nth-child(1){
+    width: 25%;
+}
+.tabs li:nth-child(2){
+    width: 25%;
+}
+.tabs li:nth-child(3){
+    width: 35%;
 }
 
-/*----------------------------section clients end-----------------------------*/
+.tabs li:nth-child(4) {
+    width: 15%;
+}
 
-/*----------------------------section brands begin----------------------------*/
+
 .brands{
     background-color: #ffffff;
 }
