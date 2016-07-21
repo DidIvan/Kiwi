@@ -116,8 +116,8 @@ nav li a {
     padding: 5px 10px;
     width: 100%;
 }
-
 /*Header end*/
+
 #wrapper {
     position: relative;
     margin: 0 auto;
@@ -158,26 +158,18 @@ article {
     min-height: 350px;
 }
 
-/*#s_left {
-    float: left;
-    width: 240px;
-    margin-left: -100%;
-    left: 0;
-    position: relative;
-    background: #E88139;
-    min-height: 350px;
+/*----------------------------section brands begin-----------------------------*/
+.brands{
+    background: #ffffff;
 }
-
-#s_right {
-    float: left;
-    width: 240px;
-    margin-left: -240px;
-    right: 0;
-    position: relative;
-    background: #E86A3B;
-    min-height: 350px;
-}*/
-/*Begin Footer*/
+.brands-list li{
+    list-style: none;
+    width: 33.333%;
+    display: inline-block;
+    margin-right: -5px;
+}
+/*----------------------------section brands end-----------------------------*/
+/*---------------------------Begin Footer----------------------------------*/
 /*footer {
     margin: -220px auto 0;
     width: 100%;
