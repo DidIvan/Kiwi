@@ -164,11 +164,7 @@ article {
     background-color: #fdc029;
 }
 
-.tabs input {
-    display: none
-}
-
-.tabs label {
+.tabs li {
     display: inline-block;
     width: 25%;
     cursor: pointer;
@@ -178,28 +174,21 @@ article {
 /*----------------------------section clients end-----------------------------*/
 
 /*----------------------------section brands begin----------------------------*/
-#table ul {
-    display: block;
-    position: absolute;
-    opacity: 0;
+.brands{
+    background-color: #ffffff;
 }
-
-#tab1:checked .brands-list1 > ul {
-    opacity: 1
+.brands-list {
+    display: none;
 }
-
-#tab2:checked #table ul:nth-of-type(2),
-#tab3:checked #table ul:nth-of-type(3),
-#tab4:checked #table ul:nth-of-type(4) {
-    opacity: 1
+.brands-list.active {
+    display: block; /* по умолчанию показываем нужный блок */
 }
-
-/*.brands-list li {
+.brands-list li {
     list-style: none;
     width: 33.333%;
     display: inline-block;
     margin-right: -5px;
-}*/
+}
 /*----------------------------section brands end-----------------------------*/
 /*---------------------------Begin Footer----------------------------------*/
 /*footer {
