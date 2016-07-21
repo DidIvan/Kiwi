@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63a75414-9f7a-4d73-b5f2-f373c0a804bb" name="Default" comment="ss">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/jquery-3.1.0.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/tabs.js" afterPath="$PROJECT_DIR$/public/js/tabs.js" />
     </list>
     <ignored path="Kiwi.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -174,7 +170,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../GitLab/rentalexchange-frontend" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -264,7 +260,7 @@
       <workItem from="1469003309335" duration="15345000" />
       <workItem from="1469032079781" duration="12037000" />
       <workItem from="1469085594737" duration="15421000" />
-      <workItem from="1469120299128" duration="12476000" />
+      <workItem from="1469120299128" duration="12551000" />
     </task>
     <task id="LOCAL-00001" summary="g">
       <created>1468950637558</created>
@@ -315,11 +311,18 @@
       <option name="project" value="LOCAL" />
       <updated>1469128198832</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="ss">
+      <created>1469133783418</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1469133783418</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64979000" />
+    <option name="totallyTimeSpent" value="65054000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
