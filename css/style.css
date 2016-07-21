@@ -105,7 +105,7 @@ nav li {
 }
 
 nav li:first-child {
-  /*  list-style: none;*/
+    /*  list-style: none;*/
 }
 
 nav li a {
@@ -116,6 +116,7 @@ nav li a {
     padding: 5px 10px;
     width: 100%;
 }
+
 /*Header end*/
 
 #wrapper {
@@ -158,16 +159,47 @@ article {
     min-height: 350px;
 }
 
-/*----------------------------section brands begin-----------------------------*/
-.brands{
-    background: #ffffff;
+/*----------------------------section clients begin-----------------------------*/
+.clients {
+    background-color: #fdc029;
 }
-.brands-list li{
+
+.tabs input {
+    display: none
+}
+
+.tabs label {
+    display: inline-block;
+    width: 25%;
+    cursor: pointer;
+    margin-right: -5px;
+}
+
+/*----------------------------section clients end-----------------------------*/
+
+/*----------------------------section brands begin----------------------------*/
+#table ul {
+    display: block;
+    position: absolute;
+    opacity: 0;
+}
+
+#tab1:checked .brands-list1 > ul {
+    opacity: 1
+}
+
+#tab2:checked #table ul:nth-of-type(2),
+#tab3:checked #table ul:nth-of-type(3),
+#tab4:checked #table ul:nth-of-type(4) {
+    opacity: 1
+}
+
+/*.brands-list li {
     list-style: none;
     width: 33.333%;
     display: inline-block;
     margin-right: -5px;
-}
+}*/
 /*----------------------------section brands end-----------------------------*/
 /*---------------------------Begin Footer----------------------------------*/
 /*footer {
@@ -189,34 +221,43 @@ footer {
 footer li {
     list-style: none;
 }
-footer li a{
+
+footer li a {
     color: #ffffff;
 }
-.foot-logo, .foot-list1, .foot-list2, .foot-list3{
-    float:left;
+
+.foot-logo, .foot-list1, .foot-list2, .foot-list3 {
+    float: left;
 }
-.foot-logo{
+
+.foot-logo {
     margin: 40px 0 0 0;
 }
-.foot-list1{
+
+.foot-list1 {
     margin: 50px 0 0 45px;
 }
-.foot-list2{
+
+.foot-list2 {
     margin: 50px 0 0 30px;
 }
+
 .foot-list3 {
     margin: 50px 0 0 30px;
 }
+
 .foot-list4 {
     width: 162px;
     float: right;
     margin: 50px 0 0 20px;
 }
-.foot-list4 span{
+
+.foot-list4 span {
     display: block;
     text-align: right;
 }
-.foot-list4 a{
+
+.foot-list4 a {
     text-transform: uppercase;
     color: #ffffff;
 }
