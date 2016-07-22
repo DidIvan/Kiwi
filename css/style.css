@@ -124,7 +124,7 @@ nav li a {
     margin: 0 auto;
     height: auto !important;
     height: 100%;
-    min-height: 100%; /* -  Нужно для прижатия футера к низу*/
+/*    min-height: 100%; *//* -  Нужно для прижатия футера к низу*/
     /*padding: 5px 0;*/
 }
 
@@ -163,39 +163,61 @@ article {
 .clients {
     background-color: #fdc029;
 }
-.clients h2{
+
+.clients h2 {
     text-transform: uppercase;
     color: #000000;
-    font-size: 2.1875em;/*35/16*/
+    font-size: 2.1875em; /*35/16*/
     font-weight: bold;
     display: block;
     text-align: center;
     padding: 43px 0 28px 0;
 }
-.clients span{
+
+.clients span {
     display: block;
     font-size: 1.375em; /*22/16*/
     text-align: center;
     padding-bottom: 55px;
 }
+
 .tabs li {
     display: block;
+    position:relative;
     float: left;
     cursor: pointer;
     font-size: 1.375em; /*22/16*/
     line-height: 1.6;
+    height: 100px;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 44px;
+    padding-bottom: 44px;
 }
-.tabs li:nth-child(1){
+/**/
+.arrow-top {
+    position:absolute;
+    width: 0;
+    height: 0;
+    border: 1.5625em solid transparent;
+    border-top-color: orangered;
+    border-bottom: 0;
+    top:100px;
+    right:40%;
+display: none;
+}
+.tabs li.active ~ .arrow-top{
+    display: block;
+}
+.tabs li:nth-child(1) {
     width: 25%;
 }
-.tabs li:nth-child(2){
+
+.tabs li:nth-child(2) {
     width: 25%;
 }
-.tabs li:nth-child(3){
+
+.tabs li:nth-child(3) {
     width: 35%;
 }
 
@@ -203,22 +225,38 @@ article {
     width: 15%;
 }
 
-
-.brands{
+.brands {
     background-color: #ffffff;
 }
+
 .brands-list {
     display: none;
 }
+
 .brands-list.active {
     display: block; /* по умолчанию показываем нужный блок */
 }
+
 .brands-list li {
     list-style: none;
     width: 33.333%;
-    display: inline-block;
-    margin-right: -5px;
+    /* display: inline-block;*/
+    display: block;
+    float: left;
+    margin-top: 85px;
 }
+
+.brands-list li:nth-child(4),
+.brands-list li:nth-child(5) {
+    margin-bottom: 80px;
+}
+.brands-list li:nth-child(6) {
+    margin: 50px 0 10px 0;
+}
+.brands-list li:nth-child(5) {
+    width: 28%;
+}
+
 /*----------------------------section brands end-----------------------------*/
 /*---------------------------Begin Footer----------------------------------*/
 /*footer {
