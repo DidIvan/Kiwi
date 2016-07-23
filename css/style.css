@@ -31,7 +31,7 @@ body {
 .maxw {
     margin: 0 auto;
     min-width: 320px;
-    max-width: 990px;
+    max-width: 1024px;
 }
 
 /*Header start*/
@@ -124,7 +124,7 @@ nav li a {
     margin: 0 auto;
     height: auto !important;
     height: 100%;
-/*    min-height: 100%; *//* -  Нужно для прижатия футера к низу*/
+    /*    min-height: 100%; *//* -  Нужно для прижатия футера к низу*/
     /*padding: 5px 0;*/
 }
 
@@ -158,11 +158,60 @@ article {
     background: #EAF2F5;
     min-height: 350px;
 }
+
+/*----------------------------section services begin-----------------------------*/
+.services {
+    background: #ffffff;
+}
+
+.left-col {
+    width: 65%;
+}
+
+.right-col {
+    width: 35%;
+}
+
+.card {
+    padding-top: 65px
+}
+
+.card-image {
+    float: left;
+}
+
+.detail h5 {
+    font-size: 1.875em; /*30/16*/
+    text-transform: uppercase;
+}
+
+.detail span {
+    font-size: 1.125em; /*18/16*/
+    display: block;
+    margin: 35px 0 30px 0;
+}
+.detail button{
+    font-size: 1.5625em;/*25/16*/
+    text-transform: uppercase;
+    background: #ff8400;
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+}
+.detail button:hover{
+    background: #ff4e00;
+}
+.card:last-child{
+    padding-bottom: 70px;
+}
+/*----------------------------section services end-----------------------------*/
+
 /*----------------------------section standards begin-----------------------------*/
-.standards{
+.standards {
     background: #2b2a28;
     color: #ffffff;
 }
+
 .standards h2 {
     text-transform: uppercase;
     font-size: 2.1875em; /*35/16*/
@@ -170,22 +219,26 @@ article {
     text-align: center;
     padding: 45px 0 60px 0;
 }
-.certificate{
+
+.certificate {
     float: left;
     padding: 0 60px 40px 20px;
 }
-.iso{
+
+.iso {
     float: left;
     margin-bottom: 70px;
 }
-.iso span{
-/*    font-size: 1.625em;!*26/16*!*/
-    font-size: 1.25em;/*20/16*/
+
+.iso span {
+    /*    font-size: 1.625em;!*26/16*!*/
+    font-size: 1.25em; /*20/16*/
     font-style: italic;
     display: block;
     padding: 42px 0 42px 30px;
     float: right;
 }
+
 /*----------------------------section standards end-----------------------------*/
 
 /*----------------------------section clients begin-----------------------------*/
@@ -212,7 +265,7 @@ article {
 
 .tabs li {
     display: block;
-    position:relative;
+    position: relative;
     float: left;
     cursor: pointer;
     font-size: 1.375em; /*22/16*/
@@ -223,21 +276,24 @@ article {
     text-align: center;
     padding-bottom: 44px;
 }
+
 /**/
 .arrow-top {
-    position:absolute;
+    position: absolute;
     width: 0;
     height: 0;
     border: 1.5625em solid transparent;
     border-top-color: orangered;
     border-bottom: 0;
-    top:100px;
-    right:40%;
-display: none;
-}
-.tabs li.active ~ .arrow-top{
+    top: 100px;
+    right: 40%;
     display: block;
 }
+
+.tabs li.active ~ .arrow-top {
+    display: block;
+}
+
 .tabs li:nth-child(1) {
     width: 25%;
 }
@@ -279,9 +335,11 @@ display: none;
 .brands-list li:nth-child(5) {
     margin-bottom: 80px;
 }
+
 .brands-list li:nth-child(6) {
     margin: 50px 0 10px 0;
 }
+
 .brands-list li:nth-child(5) {
     width: 28%;
 }
