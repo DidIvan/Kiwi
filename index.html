@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/fonts.css" type="text/css">
     <script type="text/javascript" src="public/js/jquery-3.1.0.min.js"></script>
     <script type="text/javascript" src="public/js/tabs.js"></script>
+    <script type="text/javascript" src="public/js/slide.js"></script>
 </head>
 
 <body>
@@ -42,160 +43,182 @@
             <li><a href="#">Вакансии</a></li>
             <li><a href="#">Контакты</a></li>
         </ul>
+        <div id="slider" class="slider">
+            <div class="cell1"><img src="img/cell1/Layer-511.png"></div>
+            <div class="cell2"><img src="img/cell2/1.png"><img src="img/cell2/2.png" style="display: none"></div>
+            <div class="cell3"><img src="img/cell3/1.png"><img src="img/cell3/2.png" style="display: none"></div>
+            <div class="cell4"><img src="img/cell4/1.png"><img src="img/cell4/2.png" style="display: none"></div>
+            <div class="cell5"><img src="img/cell5/2.png"></div>
+            <div class="cell6"><img src="img/cell6/3.png"></div>
+
+            <!--<img src="http://wap.unsveta.com/images/2163cy320x480.jpg" id="img_1" style="position:absolute; "/>
+            <img src="http://img0.liveinternet.ru/images/attach/b/3/14/277/14277320_lotos4.jpg" id="img_2"
+                 style="position:absolute;opacity: 0; filter: alpha(opacity=0); "/>
+            <img src="http://www.corporacia.ru/_data/content/0000593/corporacia.ru.000035.jpg" id="img_3"
+                 style="position:absolute;opacity: 0; filter: alpha(opacity=0); "/>
+            <img src="http://img.galya.ru/galya.ru/Pictures2/ttp/2009/06/06/1294186.jpg" id="img_4"
+                 style="position:absolute;opacity: 0; filter: alpha(opacity=0); "/>
+            <img src="http://i032.radikal.ru/0712/f1/9e278e7f8393.jpg" id="img_5"
+                 style="position:absolute;opacity: 0; filter: alpha(opacity=0); "/>-->
+        </div>
+        <section>
+            <div class="request">
+                <div class="request1"></div>
+                <div class="request2">
+                    <h3>Изготовление деталей из металла по вашим чертежам</h3>
+                    <span>В поиске компании по металлообработке? Отправьте ваш запрос для оценки стоимости</span>
+                    <form action="">
+                        <input type="text" placeholder=" ВАШЕ ИМЯ">
+                        <input type="text" placeholder=" ТЕЛЕФОН">
+                        <input type="text" placeholder=" E-MAIL">
+                        <input type="submit" value="ОТПРАВИТЬ"></form>
+                </div>
+            </div>
+        </section>
     </nav>
 </header>
+<section class="services">
+    <div class="maxw">
+        <div class="left-col">
+            <div class="card clearfix">
+                <div class="card-image">
+                    <img src="img/services1.png"/>
+                </div>
 
-<div id="wrapper" style="background-color: darkolivegreen;">
-    <div class="section maxw" style="background-color: burlywood;">
+                <div class="detail">
+                    <h5>Фрезерные работы</h5>
+                            <span>Медиамикс продуцирует охват аудитории.
+                                Исходя из структуры пирамиды Маслоу,
+                                рекламный клаттер раскручивает инструмент маркетинга.</span>
+                    <button>узнать больше</button>
+                </div>
+            </div>
+            <div class="card clearfix">
+                <div class="card-image">
+                    <img src="img/services2.png"/>
+                </div>
 
-        <div class="mainwrap">
-            <main>
-                <article>
-                    <h1>
-                        Каркас шаблона
-                    </h1>
-                    <h2>
-                        Для будущего сайта
-                    </h2>
-                    <p>контент</p>
-                </article>
-            </main>
+                <div class="detail">
+                    <h5>Токарные работы</h5>
+                            <span>Медиамикс продуцирует охват аудитории.
+                                Исходя из структуры пирамиды Маслоу,
+                                рекламный клаттер раскручивает инструмент маркетинга.</span>
+                    <button>узнать больше</button>
+                </div>
+            </div>
+            <div class="card clearfix">
+                <div class="card-image">
+                    <img src="img/services3.png"/>
+                </div>
+
+                <div class="detail">
+                    <h5>Изготовление деталей
+                        по чертежам заказчика</h5>
+                            <span>Медиамикс продуцирует охват аудитории.
+                                Исходя из структуры пирамиды Маслоу,
+                                рекламный клаттер раскручивает инструмент маркетинга.</span>
+                    <button>узнать больше</button>
+                </div>
+            </div>
+            <div class="card clearfix">
+                <div class="card-image">
+                    <img src="img/services4.png"/>
+                </div>
+
+                <div class="detail">
+                    <h5>Сварочные
+                        и сборочные работы</h5>
+                            <span>Медиамикс продуцирует охват аудитории.
+                                Исходя из структуры пирамиды Маслоу,
+                                рекламный клаттер раскручивает инструмент маркетинга.</span>
+                    <button>узнать больше</button>
+                </div>
+            </div>
         </div>
-
+        <div class="right-col" style="background-color: rosybrown">
+            <div class="products clearfix">
+                <h5>Изготовление деталей
+                    по чертежам заказчика</h5>
+                <div class="up"><a href=""><img src="img/up.png"></a></div>
+                <div class="products-image">
+                    <img src="img/services5.png"/>
+                    <img src="img/services6.png"/>
+                </div>
+                <div class="down"><a href=""><img src="img/down.png"></a></div>
+            </div>
+        </div>
     </div>
-    <section class="services">
+</section>
+<section class="standards">
+    <div class="maxw clearfix">
+        <h2>Гарантируем качество изделий</h2>
+        <div class="certificate">
+            <img src="img/certificate.jpg" alt="certificate">
+        </div>
+        <div class="iso">
+            <img src="img/ISO-9001.png" alt="">
+            <span>Производство  сертифицировано ГОСТ ISO 9001</span>
+        </div>
+        <div class="iso grade">
+            <img src="img/Forma-1.png" alt="grade">
+            <span>Заводское качество и низкие цены</span>
+        </div>
+        <div class="iso machine">
+            <img src="img/Forma-11.png" alt="machine">
+            <span>Обновляемый и модернизируемый парк станков</span>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="clients">
         <div class="maxw">
-            <div class="left-col">
-                <div class="card clearfix">
-                    <div class="card-image">
-                        <img src="img/services1.png"/>
-                    </div>
-
-                    <div class="detail">
-                        <h5 class="truncate">Фрезерные работы</h5>
-                            <span>Медиамикс продуцирует охват аудитории.
-                                Исходя из структуры пирамиды Маслоу,
-                                рекламный клаттер раскручивает инструмент маркетинга.</span>
-                        <button>узнать больше</button>
-                    </div>
-                </div>
-                <div class="card clearfix">
-                    <div class="card-image">
-                        <img src="img/services2.png"/>
-                    </div>
-
-                    <div class="detail">
-                        <h5 class="truncate">Токарные работы</h5>
-                            <span>Медиамикс продуцирует охват аудитории.
-                                Исходя из структуры пирамиды Маслоу,
-                                рекламный клаттер раскручивает инструмент маркетинга.</span>
-                        <button>узнать больше</button>
-                    </div>
-                </div>
-                <div class="card clearfix">
-                    <div class="card-image">
-                        <img src="img/services3.png"/>
-                    </div>
-
-                    <div class="detail">
-                        <h5 class="truncate">Изготовление деталей
-                            по чертежам заказчика</h5>
-                            <span>Медиамикс продуцирует охват аудитории.
-                                Исходя из структуры пирамиды Маслоу,
-                                рекламный клаттер раскручивает инструмент маркетинга.</span>
-                        <button>узнать больше</button>
-                    </div>
-                </div>
-                <div class="card clearfix">
-                    <div class="card-image">
-                        <img src="img/services4.png"/>
-                    </div>
-
-                    <div class="detail">
-                        <h5 class="truncate">Сварочные
-                            и сборочные работы</h5>
-                            <span>Медиамикс продуцирует охват аудитории.
-                                Исходя из структуры пирамиды Маслоу,
-                                рекламный клаттер раскручивает инструмент маркетинга.</span>
-                        <button>узнать больше</button>
-                    </div>
-                </div>
-            </div>
-            <div class="right-col" style="background-color: rosybrown">
+            <h2>наши заказчики</h2>
+            <span>Предприятия крупного, среднего и точного машиностроения</span>
+            <div class="tabs clearfix">
+                <ul class="tabs-list">
+                    <li class="active">Машиностроительные
+                        предприятия
+                        <div class="arrow-top"></div>
+                    </li>
+                    <li>Производители
+                        пишевой продукции
+                        <div class="arrow-top"></div>
+                    </li>
+                    <li>предприятия специального
+                        машиностроения
+                        <div class="arrow-top"></div>
+                    </li>
+                    <li>Оборонные
+                        предприятия
+                        <div class="arrow-top"></div>
+                    </li>
+                </ul>
 
             </div>
         </div>
-    </section>
-    <section class="standards">
+    </div>
+    <div class="brands">
         <div class="maxw clearfix">
-            <h2>Гарантируем качество изделий</h2>
-            <div class="certificate">
-                <img src="img/certificate.jpg" alt="certificate">
-            </div>
-            <div class="iso">
-                <img src="img/ISO-9001.png" alt="">
-                <span>Производство  сертифицировано ГОСТ ISO 9001</span>
-            </div>
-            <div class="iso grade">
-                <img src="img/Forma-1.png" alt="grade">
-                <span>Заводское качество и низкие цены</span>
-            </div>
-            <div class="iso machine">
-                <img src="img/Forma-11.png" alt="machine">
-                <span>Обновляемый и модернизируемый парк станков</span>
-            </div>
+            <ul class="brands-list active">
+                <li><img src="img/alstom.png" alt=""></li>
+                <li><img src="img/specavto.png" alt=""></li>
+                <li><img src="img/schneider.png" alt=""></li>
+                <li><img src="img/holmer.png" alt=""></li>
+                <li><img src="img/wikus.png" alt=""></li>
+                <li><img src="img/cater.png" alt=""></li>
+            </ul>
+            <ul class="brands-list">
+                <li>hhhhhhhhhhhhh</li>
+            </ul>
+            <ul class="brands-list">
+                <li>jjjjjjjjjjjjjjj</li>
+            </ul>
+            <ul class="brands-list">
+                <li>kkkkkkkkkkkkkk</li>
+            </ul>
         </div>
-    </section>
-    <section>
-        <div class="clients">
-            <div class="maxw">
-                <h2>наши заказчики</h2>
-                <span>Предприятия крупного, среднего и точного машиностроения</span>
-                <div class="tabs clearfix">
-                    <ul class="tabs-list">
-                        <li class="active">Машиностроительные
-                            предприятия
-                            <div class="arrow-top"></div>
-                        </li>
-                        <li>Производители
-                            пишевой продукции
-                            <div class="arrow-top"></div>
-                        </li>
-                        <li>предприятия специального
-                            машиностроения
-                            <div class="arrow-top"></div>
-                        </li>
-                        <li>Оборонные
-                            предприятия
-                            <div class="arrow-top"></div>
-                        </li>
-                    </ul>
-
-                </div>
-            </div>
-        </div>
-        <div class="brands">
-            <div class="maxw clearfix">
-                <ul class="brands-list active">
-                    <li><img src="img/alstom.png" alt=""></li>
-                    <li><img src="img/specavto.png" alt=""></li>
-                    <li><img src="img/schneider.png" alt=""></li>
-                    <li><img src="img/holmer.png" alt=""></li>
-                    <li><img src="img/wikus.png" alt=""></li>
-                    <li><img src="img/cater.png" alt=""></li>
-                </ul>
-                <ul class="brands-list">
-                    <li>hhhhhhhhhhhhh</li>
-                </ul>
-                <ul class="brands-list">
-                    <li>jjjjjjjjjjjjjjj</li>
-                </ul>
-                <ul class="brands-list">
-                    <li>kkkkkkkkkkkkkk</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+    </div>
+</section>
 </div>
 <footer>
     <div class="maxw clearfix">

@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     font-size: 16px;
 }
@@ -38,7 +40,6 @@ body {
 header {
     min-width: 320px;
     width: 100%;
-    height: 230px;
     background: #ffffff;
 }
 
@@ -90,8 +91,8 @@ h1 {
 nav {
     background: #ff8400;
     width: 100%;
-    height: 48px;
     color: #ffffff;
+    padding-bottom: 2px;
 }
 
 nav ul {
@@ -117,7 +118,98 @@ nav li a {
     width: 100%;
 }
 
-/*Header end*/
+.slider {
+    max-width: 100%;
+    white-space: nowrap;
+    background: #ffffff;
+}
+
+.slider div {
+    display: inline-block;
+}
+
+.cell2, .cell3, .cell4, .cell5 {
+    width: 27.437%; /*439/1600*/
+    margin-left: -7.65%;
+}
+
+.cell6 {
+    width: 7.625%;
+    margin-left: -7.7%
+}
+
+
+.cell2 img, .cell3 img, .cell4 img, .cell5 img, .cell6 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.cell1 {
+    width: 19.562%; /*313/1600*/
+}
+
+.cell1 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.cell6 img {
+    height: auto;
+    max-width: 100%;
+}
+
+nav section {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    right: -20%;
+}
+
+.request {
+    position: relative;
+}
+
+.request1 {
+    position: absolute;
+    width: 58.18%; /*931/1600*/
+    height: 150px;
+    -webkit-transform: skew(-16deg);
+    -moz-transform: skew(-16deg);
+    -o-transform: skew(-16deg);
+    background: #ffffff;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.request2 {
+    position: absolute;
+    color: #000000;
+    z-index: 100;
+}
+.request2 h3{
+    font-size: 1.9em;
+    margin-left: 45px;
+    margin-top: 23px;
+}
+.request2 span{
+    font-size: 1em;
+    margin-left: 35px;
+    line-height: 2;
+}
+.request2 form{
+    margin-left: 25px;
+}
+.request2 input{
+    width: 23.5%;
+    height: 40px;
+    border: 1px black solid;
+}
+.request2 input[type="submit"]{
+    background: #f49d3f;
+    border: none;
+    font-weight: bold;
+}
+/*-------------------------Header end-----------------------------*/
 
 #wrapper {
     position: relative;
@@ -190,20 +282,25 @@ article {
     display: block;
     margin: 35px 0 30px 0;
 }
-.detail button{
-    font-size: 1.5625em;/*25/16*/
+
+.detail button {
+    font-size: 1.5625em; /*25/16*/
     text-transform: uppercase;
     background: #ff8400;
     border: none;
     color: #ffffff;
     padding: 10px 20px;
+    transition: 1s;
 }
-.detail button:hover{
+
+.detail button:hover {
     background: #ff4e00;
 }
-.card:last-child{
+
+.card:last-child {
     padding-bottom: 70px;
 }
+
 /*----------------------------section services end-----------------------------*/
 
 /*----------------------------section standards begin-----------------------------*/
@@ -287,11 +384,7 @@ article {
     border-bottom: 0;
     top: 100px;
     right: 40%;
-    display: block;
-}
-
-.tabs li.active ~ .arrow-top {
-    display: block;
+    display: none;
 }
 
 .tabs li:nth-child(1) {

@@ -3,6 +3,8 @@ $(document).ready(function () {
         $(this)
             .addClass('active').siblings().removeClass('active')
             .closest('section').find('ul.brands-list').removeClass('active').eq($(this).index()).addClass('active');
+        $(this)
+            .find(".active").css("display", "block")
     });
 
 /* $('ul.tabs-list li').on('click','li:(.active)',function () {
@@ -30,6 +32,8 @@ $(document).ready(function () {
             cursor: "default"
         });
     });*/
+  /*  $('.certificate img').click(function () {
+        $(this).css("width","200%","height","200%")
+    })*/
 });
-
 
