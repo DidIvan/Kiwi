@@ -136,13 +136,11 @@ nav li a {
 
 .cell2, .cell3, .cell4, .cell5 {
     width: 27.437%; /*439/1600*/
-    /* margin-left: -7.65%;*/
     margin-left: -7.4%;
 }
 
 .cell6 {
     width: 7.625%;
-    /*margin-left: -7.7%;*/
     margin-left: -7.35%;
 }
 
@@ -169,27 +167,27 @@ nav section {
     position: absolute;
     width: 100%;
     right: -20%;
-    top: 430px;
+    bottom: 55%;
 }
 
 .request {
-   /* position: relative;*/
+    position: relative;
 }
 
 .request1 {
- /*  !* position: absolute;*!
-    width: 931px;
-    height: 150px;
+    position: absolute;
+    width: 58.18%; /*931/1600*/
+    height: 9.375em;
     -webkit-transform: skew(-16deg);
     -moz-transform: skew(-16deg);
     -o-transform: skew(-16deg);
     background: #ff1a35;
-    opacity: 0.5;*/
+    opacity: 0.5;
     z-index: 0;
 }
 
 .request2 {
-   /* position: absolute;*/
+    position: absolute;
     color: #000000;
     z-index: 100;
 }
