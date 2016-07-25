@@ -92,7 +92,7 @@ nav {
     background: #ff8400;
     width: 100%;
     color: #ffffff;
-    padding-bottom: 2px;
+    padding-bottom: 4px;
 }
 
 nav ul {
@@ -125,19 +125,25 @@ nav li a {
 }
 
 .slider div {
-    display: inline-block;
+    display: block;
+    float: left;
+}
+
+.slider div:last-child {
+    float: right;
 }
 
 .cell2, .cell3, .cell4, .cell5 {
     width: 27.437%; /*439/1600*/
-    margin-left: -7.65%;
+    /* margin-left: -7.65%;*/
+    margin-left: -7.4%;
 }
 
 .cell6 {
     width: 7.625%;
-    margin-left: -7.7%
+    /*margin-left: -7.7%;*/
+    margin-left: -7.35%;
 }
-
 
 .cell2 img, .cell3 img, .cell4 img, .cell5 img, .cell6 img {
     max-width: 100%;
@@ -186,69 +192,45 @@ nav section {
     color: #000000;
     z-index: 100;
 }
-.request2 h3{
+
+.request2 h3 {
     font-size: 1.9em;
     margin-left: 45px;
     margin-top: 23px;
 }
-.request2 span{
+
+.request2 span {
     font-size: 1em;
     margin-left: 35px;
     line-height: 2;
 }
-.request2 form{
+
+.request2 form {
     margin-left: 25px;
 }
-.request2 input{
+
+.request2 input {
     width: 23.5%;
     height: 40px;
     border: 1px black solid;
 }
-.request2 input[type="submit"]{
+
+.request2 input[type="submit"] {
     background: #f49d3f;
     border: none;
     font-weight: bold;
 }
+
 /*-------------------------Header end-----------------------------*/
 
 #wrapper {
     position: relative;
     margin: 0 auto;
+    max-width: 1600px;
     height: auto !important;
     height: 100%;
     /*    min-height: 100%; *//* -  Нужно для прижатия футера к низу*/
     /*padding: 5px 0;*/
-}
-
-.section {
-    width: 100%;
-    padding: 0 0 220px;
-    position: relative;
-}
-
-.section:after {
-    content: '';
-    clear: both;
-    display: table;
-}
-
-.mainwrap {
-    width: 100%;
-    float: left;
-    overflow: hidden;
-}
-
-main {
-    padding: 0 240px 0 240px;
-    min-height: 350px;
-    margin: 0;
-}
-
-article {
-    padding: 0 5px;
-    margin: 0 5px;
-    background: #EAF2F5;
-    min-height: 350px;
 }
 
 /*----------------------------section services begin-----------------------------*/
@@ -258,10 +240,12 @@ article {
 
 .left-col {
     width: 65%;
+    float: left;
 }
 
 .right-col {
     width: 35%;
+    float: right;
 }
 
 .card {
@@ -284,7 +268,7 @@ article {
 }
 
 .detail button {
-    font-size: 1.5625em; /*25/16*/
+    font-size: 1.875em;
     text-transform: uppercase;
     background: #ff8400;
     border: none;
@@ -299,6 +283,23 @@ article {
 
 .card:last-child {
     padding-bottom: 70px;
+}
+
+.switcher1, .switcher2 {
+    text-align: center;
+}
+.products-image{
+    padding: 35px 0;
+}
+.switcher1{
+    margin-top: 60px;
+}
+.switcher2{
+    margin-top: 130px;
+}
+.switcher1 h5, .switcher2 h5 {
+    font-size: 2.1875em; /*35/16*/
+    margin-bottom: 40px;
 }
 
 /*----------------------------section services end-----------------------------*/
