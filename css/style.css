@@ -89,6 +89,7 @@ h1 {
 }
 
 nav {
+    position: relative;
     background: #ff8400;
     width: 100%;
     color: #ffffff;
@@ -172,23 +173,23 @@ nav section {
 }
 
 .request {
-    position: relative;
+   /* position: relative;*/
 }
 
 .request1 {
-    position: absolute;
-    width: 58.18%; /*931/1600*/
+ /*  !* position: absolute;*!
+    width: 931px;
     height: 150px;
     -webkit-transform: skew(-16deg);
     -moz-transform: skew(-16deg);
     -o-transform: skew(-16deg);
-    background: #ffffff;
-    opacity: 0.5;
+    background: #ff1a35;
+    opacity: 0.5;*/
     z-index: 0;
 }
 
 .request2 {
-    position: absolute;
+   /* position: absolute;*/
     color: #000000;
     z-index: 100;
 }
@@ -210,7 +211,8 @@ nav section {
 }
 
 .request2 input {
-    width: 23.5%;
+    /*width: 23.5%;*/
+    width: 13%;
     height: 40px;
     border: 1px black solid;
 }
