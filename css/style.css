@@ -167,8 +167,8 @@ nav li a {
 nav section {
     position: absolute;
     width: 100%;
-    bottom: 0;
     right: -20%;
+    top: 430px;
 }
 
 .request {
@@ -195,13 +195,13 @@ nav section {
 
 .request2 h3 {
     font-size: 1.9em;
-    margin-left: 45px;
-    margin-top: 23px;
+ /*   margin-left: 45px;
+    margin-top: 23px;*/
 }
 
 .request2 span {
     font-size: 1em;
-    margin-left: 35px;
+/*    margin-left: 35px;*/
     line-height: 2;
 }
 
@@ -214,7 +214,9 @@ nav section {
     height: 40px;
     border: 1px black solid;
 }
-
+.request2 input[type="text"]{
+    padding-left: 10px;
+}
 .request2 input[type="submit"] {
     background: #f49d3f;
     border: none;
