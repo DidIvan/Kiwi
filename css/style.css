@@ -97,27 +97,36 @@ nav {
 }
 
 nav ul {
-    line-height: 2.5;
+    list-style: none ;
+
 }
 
 nav li {
     float: left;
-    color: #2b2a28;
-    margin-left: 40px;
-    list-style: none ;
+    margin-left: 50px;
+    line-height: 2.5;
+    position: relative;
 }
 
-nav li:before {
-    color: #000000; /* Цвет маркера */
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    content: "•"; /* Сам маркер */
-    padding-right: 10px; /* Расстояние от маркера до текста */
+nav li.point:before {
+    color: #ffffff;
+    /* UTF-8 escape sequence, соответствующая символу "Маркер списка" */
+    content:"\2022";
+    /* Делаем больше, чем основной текст в li */
+    font-size: 26px;
+    font-weight: 700;
+    /* Элемент вырван из потока, выравниваем отрицательным отступом */
+    left: -25px;
+    /* Высота строки и позиционирование необходимы для выравнивания по вертикали */
+    line-height: 18px;
+    position: absolute;
+    top: 13px;
 }
 
 nav li:first-child {
     margin-left: 20px;
     list-style: none;
+
 }
 
 nav li a {
