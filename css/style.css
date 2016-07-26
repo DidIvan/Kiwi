@@ -166,8 +166,9 @@ nav li a {
 nav section {
     position: absolute;
     width: 100%;
-    right: -20%;
-    bottom: 55%;
+    left: 50%;
+    margin-left: -465px;
+    bottom: 60%;
 }
 
 .request {
@@ -176,12 +177,12 @@ nav section {
 
 .request1 {
     position: absolute;
-    width: 58.18%; /*931/1600*/
+    width: 931px; /*931/1600*/
     height: 9.375em;
     -webkit-transform: skew(-16deg);
     -moz-transform: skew(-16deg);
     -o-transform: skew(-16deg);
-    background: #ff1a35;
+    background: #ffffff;
     opacity: 0.5;
     z-index: 0;
 }
@@ -194,35 +195,46 @@ nav section {
 
 .request2 h3 {
     font-size: 1.9em;
- /*   margin-left: 45px;
-    margin-top: 23px;*/
+    margin-left: 75px;
+    margin-top: 23px;
 }
 
 .request2 span {
     font-size: 1em;
-/*    margin-left: 35px;*/
+    margin-left: 55px;
     line-height: 2;
 }
 
-.request2 form {
-    margin-left: 25px;
-}
-
 .request2 input {
-    /*width: 23.5%;*/
-    width: 13%;
+    width: 196px;
     height: 40px;
     border: 1px black solid;
+    margin-right: 5px;
 }
-.request2 input[type="text"]{
+
+.request2 input:first-child {
+    margin-left: 45px;
+}
+
+.request2 input[type="text"] {
     padding-left: 10px;
 }
+
 .request2 input[type="submit"] {
     background: #f49d3f;
     border: none;
     font-weight: bold;
 }
-
+.sent-diagram{
+    position: absolute;
+    top: 150px;
+    left: 370px;
+}
+.sent-diagram a{
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: #ffffff;
+}
 /*-------------------------Header end-----------------------------*/
 
 #wrapper {
@@ -290,15 +302,19 @@ nav section {
 .switcher1, .switcher2 {
     text-align: center;
 }
-.products-image{
+
+.products-image {
     padding: 35px 0;
 }
-.switcher1{
+
+.switcher1 {
     margin-top: 60px;
 }
-.switcher2{
+
+.switcher2 {
     margin-top: 130px;
 }
+
 .switcher1 h5, .switcher2 h5 {
     font-size: 2.1875em; /*35/16*/
     margin-bottom: 40px;
