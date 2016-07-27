@@ -545,71 +545,11 @@ footer li a {
 
 /*----------------------Footer end-----------------------*/
 /* Для отображения на устройствах меньше 980px*/
-@media screen and (min-width: 240px) and (max-width: 479px) {
 
-    main {
-        padding: 10px;
-    }
+@media screen and (max-width: 320px) {
 
-    #s_left {
-        padding: 0;
-        margin: 0 auto;
-        float: none;
-        clear: both;
-        left: 0;
-    }
-
-    #s_right {
-        padding: 0;
-        margin: 0 auto;
-        float: none;
-        clear: both;
-        right: 0;
+    #wrapper {
+        max-width: 320px;
     }
 }
 
-@media screen and (min-width: 480px) and (max-width: 799px) {
-
-    main {
-        padding: 10px;
-    }
-
-    #s_left {
-        padding: 0;
-        margin: 0 auto;
-        float: none;
-        clear: both;
-        left: 0;
-    }
-
-    #s_right {
-        padding: 0;
-        margin: 0 auto;
-        float: none;
-        clear: both;
-        right: 0;
-    }
-}
-
-@media screen and (min-width: 800px) and (max-width: 979px) {
-
-    main {
-        padding: 10px;
-    }
-
-    #s_left {
-        padding: 0;
-        margin: 0 auto;
-        float: none;
-        clear: both;
-        left: 0;
-    }
-
-    #s_right {
-        padding: 0;
-        margin: 0 auto;
-        float: none;
-        clear: both;
-        right: 0;
-    }
-}
