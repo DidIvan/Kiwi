@@ -421,8 +421,9 @@ nav section {
     border-top-color: orangered;
     border-bottom: 0;
     top: 100px;
-    right: 40%;
-    display: none;
+    left: 50%;
+    margin-left: -25px;
+    display: block;
 }
 
 .tabs li:nth-child(1) {
