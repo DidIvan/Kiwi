@@ -423,7 +423,7 @@ nav section {
     top: 100px;
     left: 50%;
     margin-left: -25px;
-    display: block;
+    display: none;
 }
 
 .tabs li:nth-child(1) {
