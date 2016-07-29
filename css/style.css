@@ -140,7 +140,7 @@ nav li a {
     background: #ffffff;
 }
 
-.slider div{
+.slider div {
     float: left;
 }
 
@@ -173,6 +173,15 @@ nav li a {
 }
 
 .cell6 img {
+    height: auto;
+    max-width: 100%;
+}
+
+.slidermin {
+    display: none;
+}
+
+.slidermin img {
     height: auto;
     max-width: 100%;
 }
@@ -571,9 +580,11 @@ footer li a {
     .address {
         display: block;
     }
-    .slider div{
+
+    .slider div {
         display: block;
     }
+
     .request {
         display: block;
     }
@@ -588,7 +599,8 @@ footer li a {
     .call span {
         font-size: 1.187em; /* 19/16*/
     }
-    .slider div{
+
+    .request {
         display: none;
     }
 
@@ -599,8 +611,9 @@ footer li a {
     .call span {
         font-size: 1.187em; /* 19/16*/
     }
+
     .request {
-        display: block;
+        display: none;
     }
 }
 
@@ -614,7 +627,7 @@ footer li a {
 
     .call {
         width: 136px;
-        margin: 10px 40px 0 0;
+        margin: 10px 20px 0 0;
     }
 
     .call button {
@@ -622,12 +635,70 @@ footer li a {
         font-size: 1em;
         line-height: 1.6;
     }
-/*============================start nav=================================*/
+
+    /*============================start nav=================================*/
+    .slider div {
+        display: none;
+    }
+
+    .slidermin {
+        display: block;
+    }
+
+    nav section {
+        left: 0%;
+        margin-left: 0;
+        bottom: 60%;
+    }
+
     .request {
         display: block;
     }
-/*=============================end nav============================*/
 
+    .request1 {
+        width: 100%;
+        height: 380px;
+        -webkit-transform: skew(0deg);
+        -moz-transform: skew(0deg);
+        -o-transform: skew(0deg);
+    }
+
+    .request2 {
+        text-align: center;
+    }
+
+    .request2 h3 {
+        font-size: 23px;
+        margin-left: 0;
+    }
+
+    .request2 span {
+        margin-left: 0;
+        line-height: 1;
+    }
+    .request2 input {
+        width: 305px;
+         margin: 5px 0 0 0;
+    }
+    .request2 input:first-child {
+        margin-left: 0;
+    }
+    .request2 input[type="submit"] {
+        margin-top: 55px;
+    }
+    .sent-diagram {
+        top: 255px;
+        left: 0px;
+        color: #000000;
+    }
+    .sent-diagram a {
+        color: #000000;
+    }
+    .sent-diagram span {
+        display: inline-block;
+        text-align: center;
+    }
+    /*=============================end nav============================*/
     .right-col {
         float: left;
         width: 100%;
@@ -770,26 +841,31 @@ footer li a {
         float: none;
     }
 
-    .foot-list1{
+    .foot-list1 {
         padding-top: 5px;
     }
-    .foot-list2{
+
+    .foot-list2 {
         padding-bottom: 30px;
     }
-    .foot-list3{
+
+    .foot-list3 {
         display: block;
         padding-bottom: 20px;
         line-height: 1.6;
     }
+
     .foot-list4 {
         width: 100%;
         float: none;
         margin: 0 0 30px 0;
         line-height: 1.6;
     }
+
     .foot-list4 span {
-         text-align: center;
+        text-align: center;
     }
+
     footer li {
         font-size: 15px;
         margin-top: 15px;
