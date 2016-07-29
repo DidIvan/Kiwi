@@ -5,7 +5,11 @@ $(document).ready(function () {
             .closest('section').find('ul.brands-list').removeClass('active').eq($(this).index()).addClass('active');
     });
 
-    $(this).find(".active>.arrow-top").css("display", "block")
+    $(this).find(".active>.arrow-top").css("display", "block");
+    $('.btn-menu').on('click',function () {
+        $('.side-menu').slideToggle();
+        $(this).toggleClass("active");
+    })
 /* $('ul.tabs-list li').on('click','li:(.active)',function () {
      $(".active").toggle(".arrow-top");
     });*/
