@@ -619,7 +619,9 @@ footer li a {
 
 /* Displaying on devices with width less 320px*/
 @media screen and (max-width: 320px) {
-
+    .header {
+        height: 70px;
+    }
     .header h1 {
         width: 115px;
         margin: 10px 0 0 10px;
