@@ -588,6 +588,12 @@ footer li a {
     .request {
         display: block;
     }
+    .main-menu{
+        display: block;
+    }
+    .side-menu{
+        display: none;
+    }
 }
 
 /* Displaying on devices with width less 1024px*/
@@ -603,7 +609,12 @@ footer li a {
     .request {
         display: none;
     }
-
+    .main-menu{
+        display: none;
+    }
+    .side-menu{
+        display: block;
+    }
 }
 
 /* Displaying on devices with width range from 320px to 1024px*/
