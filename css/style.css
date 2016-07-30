@@ -216,19 +216,23 @@ nav li a {
 }
 
 nav section {
-    position: absolute;
+    position: relative;
     width: 100%;
-    left: 50%;
-    margin-left: -465px;
+/*    left: 50%;
+    margin-left: -465px;*/
     bottom: 60%;
 }
 
 .request {
-    position: relative;
+   /* position: relative;*/
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -465px;
 }
 
 .request1 {
-    position: absolute;
+  /*  position: absolute;*/
     width: 931px; /*931/1600*/
     height: 9.375em;
     -webkit-transform: skew(-16deg);
@@ -243,6 +247,7 @@ nav section {
     position: absolute;
     color: #000000;
     z-index: 100;
+    bottom: 25px;
 }
 
 .request2 h3 {
@@ -688,18 +693,21 @@ footer li a {
         display: block;
     }
 
-    nav section {
+    /*nav section {
+        left: 0%;
+        margin-left: 0;
+        bottom: 60%;
+    }*/
+
+    .request {
+        display: block;
         left: 0%;
         margin-left: 0;
         bottom: 60%;
     }
 
-    .request {
-        display: block;
-    }
-
     .request1 {
-        width: 100%;
+        width: 320px;
         height: 380px;
         -webkit-transform: skew(0deg);
         -moz-transform: skew(0deg);
@@ -730,13 +738,14 @@ footer li a {
     }
 
     .request2 input[type="submit"] {
-        margin-top: 55px;
+        margin-top: 60px;
     }
 
     .sent-diagram {
         top: 255px;
-        left: 0px;
+        left: 160px;
         color: #000000;
+        margin-left: -105px;
     }
 
     .sent-diagram a {
@@ -744,8 +753,9 @@ footer li a {
     }
 
     .sent-diagram span {
-        display: inline-block;
+        display: block;
         text-align: center;
+        width: 210px;
     }
 
     /*=============================end nav============================*/
