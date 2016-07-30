@@ -402,6 +402,7 @@ nav section {
 
 /*----------------------------section standards begin-----------------------------*/
 .standards {
+    position: relative;
     background: #2b2a28;
     color: #ffffff;
 }
@@ -420,10 +421,41 @@ nav section {
 }
 
 .certificate img {
-    max-width: 100%;
+    max-width: 327px;
     height: auto;
 }
-
+/*start style for certificate zoom*/
+.certificate-image {
+    max-width: 100%;
+    height: auto;
+    cursor:pointer;
+}
+  .popup {
+      position: absolute;
+      height:100%;
+      width:100%;
+      top:0;
+      left:0;
+      display:none;
+      text-align:center;
+  }
+  .popup_bg {
+      background:rgba(0,0,0,0.9);
+      position:absolute;
+      z-index:1;
+      height:100%;
+      width:100%;
+  }
+  .popup_img {
+      position: relative;
+      margin:0 auto;
+      z-index:2;
+      max-height:94%;
+      max-width:94%;
+      width: 40%;
+      margin:1% 0 0 0;
+  }
+/*end style for certificate zoom*/
 .iso {
     float: left;
     margin-bottom: 70px;

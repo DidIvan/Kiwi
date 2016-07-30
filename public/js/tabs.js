@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    /*tabs*/
     $('ul.tabs-list').on('click', 'li:not(.active)', function () {
         $(this)
             .addClass('active').siblings().removeClass('active')
@@ -6,37 +7,28 @@ $(document).ready(function () {
     });
 
     $(this).find(".active>.arrow-top").css("display", "block");
-    $('.btn-menu').on('click',function () {
+
+    /*menu for 320px*/
+    $('.btn-menu').on('click', function () {
         $('.side-menu').slideToggle();
         $(this).toggleClass("active");
     })
-/* $('ul.tabs-list li').on('click','li:(.active)',function () {
-     $(".active").toggle(".arrow-top");
-    });*/
+    /*zoom*/
 
-/*        $(".active").toggle(".arrow-top").css("display", "block");*/
-
-
-
-  /*  $("ul.tabs-list li").one("click", function () {
-        if ($(this).is(":first-child")) {
-            $(".arrow-top").css("display", "block")
-            $("p").text("It's the first div.");
-        } else if ($(this).is(".blue,.red")) {
-            $("p").text("It's a blue or red div.");
-        } else if ($(this).is(":contains('Peter')")) {
-            $("p").text("It's Peter!");
-        } else {
-            $("p").html("It's nothing <em>special</em>.");
-        }
-        $("p").hide().slideDown("slow");
-        $(this).css({
-            "border-style": "inset",
-            cursor: "default"
+    $(".certificate-image").on('click', function () {    // Событие клика на маленькое изображение
+        var img = $(this);    // Получаем изображение, на которое кликнули
+        var src = img.attr('src'); // Достаем из этого изображения путь до картинки
+        $(".standards").append("<div class='popup'>" + //Добавляем в тело документа разметку всплывающего окна
+            "<div class='popup_bg'></div>" + // Блок, который будет служить фоном затемненным
+            "<img src='" + src + "' class='popup_img' />" + // Само увеличенное фото
+            "</div>");
+        $(".popup").fadeIn(800); // Медленно выводим изображение
+        $(".popup_bg").click(function () {    // Событие клика на затемненный фон
+            $(".popup").fadeOut(800);    // Медленно убираем всплывающее окно
+            setTimeout(function () {    // Выставляем таймер
+                $(".popup").remove(); // Удаляем разметку всплывающего окна
+            }, 800);
         });
-    });*/
-  /*  $('.certificate img').click(function () {
-        $(this).css("width","200%","height","200%")
-    })*/
+    });
 });
 
