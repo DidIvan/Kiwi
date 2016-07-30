@@ -891,11 +891,16 @@ footer li a {
 
     .certificate {
         float: none;
-        width: 180px;
-        margin: 0 auto;
+     /*   width: 180px;
+        margin: 0 auto;*/
         padding: 0;
     }
-
+    .certificate img{
+        max-width: 50%;
+    }
+    .popup_img {
+        width: 95%;
+    }
     .iso {
         float: none;
         margin: 80px 0 0 0;
