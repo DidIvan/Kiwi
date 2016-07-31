@@ -150,15 +150,17 @@ nav li a {
     position: absolute;
     top: 8px;
 }
+
 .side-menu li {
     padding-left: 50px;
     line-height: 2.5;
     border-top: 1px solid #fff;
 }
+
 .side-menu li:hover {
     padding-left: 100px;
     line-height: 2.5;
-   font-weight: bold;
+    font-weight: bold;
     transition: 1s;
     background: #ffc444;
 }
@@ -218,13 +220,13 @@ nav li a {
 nav section {
     position: relative;
     width: 100%;
-/*    left: 50%;
-    margin-left: -465px;*/
+    /*    left: 50%;
+        margin-left: -465px;*/
     bottom: 60%;
 }
 
 .request {
-   /* position: relative;*/
+    /* position: relative;*/
     position: absolute;
     bottom: 50px;
     left: 50%;
@@ -232,7 +234,7 @@ nav section {
 }
 
 .request1 {
-  /*  position: absolute;*/
+    /*  position: absolute;*/
     width: 931px; /*931/1600*/
     height: 9.375em;
     -webkit-transform: skew(-16deg);
@@ -424,37 +426,42 @@ nav section {
     max-width: 327px;
     height: auto;
 }
+
 /*start style for certificate zoom*/
 .certificate-image {
     max-width: 100%;
     height: auto;
-    cursor:pointer;
+    cursor: pointer;
 }
-  .popup {
-      position: absolute;
-      height:100%;
-      width:100%;
-      top:0;
-      left:0;
-      display:none;
-      text-align:center;
-  }
-  .popup_bg {
-      background:rgba(0,0,0,0.9);
-      position:absolute;
-      z-index:1;
-      height:100%;
-      width:100%;
-  }
-  .popup_img {
-      position: relative;
-      margin:0 auto;
-      z-index:2;
-      max-height:94%;
-      max-width:94%;
-      width: 40%;
-      margin:1% 0 0 0;
-  }
+
+.popup {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    text-align: center;
+}
+
+.popup_bg {
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+
+.popup_img {
+    position: relative;
+    margin: 0 auto;
+    z-index: 2;
+    max-height: 94%;
+    max-width: 94%;
+    width: 40%;
+    margin: 1% 0 0 0;
+}
+
 /*end style for certificate zoom*/
 .iso {
     float: left;
@@ -475,6 +482,7 @@ nav section {
 /*----------------------------section clients begin-----------------------------*/
 .clients {
     background-color: #fdc029;
+    display: block;
 }
 
 .clients h2 {
@@ -570,6 +578,40 @@ nav section {
 
 .brands-list li:nth-child(5) {
     width: 28%;
+}
+
+.clients-min {
+    background-color: #fdc029;
+    display: none;
+    text-align: center;
+}
+
+.clients-min h2 {
+    font-size: 30px;
+    padding-top: 40px;
+    text-transform: uppercase;
+}
+
+.clients-min span {
+    font-size: 20px;
+    font-style: italic;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    display: inline-block;
+}
+
+.accord-header {
+    font-size: 20px;
+    text-align: left;
+    padding: 20px 0 20px 10px;
+    border-top: 1px solid #000000;
+    text-transform: uppercase;
+}
+
+.accord-content {
+    display: none;
+    background: #ffffff;
+    border-top: 1px solid #000000;
 }
 
 /*----------------------------section brands end-----------------------------*/
@@ -730,7 +772,6 @@ footer li a {
         margin-left: 0;
         bottom: 60%;
     }*/
-
     .request {
         display: block;
         left: 0%;
@@ -891,16 +932,19 @@ footer li a {
 
     .certificate {
         float: none;
-     /*   width: 180px;
-        margin: 0 auto;*/
+        /*   width: 180px;
+           margin: 0 auto;*/
         padding: 0;
     }
-    .certificate img{
+
+    .certificate img {
         max-width: 50%;
     }
+
     .popup_img {
         width: 95%;
     }
+
     .iso {
         float: none;
         margin: 80px 0 0 0;
@@ -920,6 +964,14 @@ footer li a {
         display: block;
         padding: 26px 26px 0 26px;
         float: none;
+    }
+
+    .clients {
+        display: none;
+    }
+
+    .clients-min {
+        display: block;
     }
 
     /*++++++++++++++++++++++++Start Footer+++++++++++++++++++++*/

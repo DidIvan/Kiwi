@@ -6,7 +6,17 @@ $(document).ready(function () {
             .closest('section').find('ul.brands-list').removeClass('active').eq($(this).index()).addClass('active');
     });
 
-    $(this).find(".active>.arrow-top").css("display", "block");
+    /*$('.tabs-list li').hasClass('active', function() {
+        $(".active>.arrow-top").css("display", "block");
+    })*/
+    $(".accordion .accord-header").click(function() {
+        if($(this).next("div").is(":visible")){
+            $(this).next("div").slideUp("slow");
+        } else {
+            $(".accordion .accord-content").slideUp("slow");
+            $(this).next("div").slideToggle("slow");
+        }
+    });
 
     /*menu for 320px*/
     $('.btn-menu').on('click', function () {
