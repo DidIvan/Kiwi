@@ -128,10 +128,16 @@ nav li.point:before {
 
 }
 
-nav li a {
+.main-menu li a {
     text-decoration: none;
     font-size: 1.2em;
     color: #ffffff;
+}
+
+.side-menu li a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #000000;
 }
 
 .side-menu {
@@ -154,7 +160,8 @@ nav li a {
 .side-menu li {
     padding-left: 50px;
     line-height: 2.5;
-    border-top: 1px solid #fff;
+    border-top: 1px solid #000000;
+    background-color: #ffffff;
 }
 
 .side-menu li:hover {
@@ -220,13 +227,10 @@ nav li a {
 nav section {
     position: relative;
     width: 100%;
-    /*    left: 50%;
-        margin-left: -465px;*/
     bottom: 60%;
 }
 
 .request {
-    /* position: relative;*/
     position: absolute;
     bottom: 50px;
     left: 50%;
@@ -234,7 +238,6 @@ nav section {
 }
 
 .request1 {
-    /*  position: absolute;*/
     width: 931px; /*931/1600*/
     height: 9.375em;
     -webkit-transform: skew(-16deg);
@@ -304,9 +307,7 @@ nav section {
     margin: 0 auto;
     max-width: 1600px;
     height: auto !important;
-    height: 100%;
-    /*    min-height: 100%; *//* -  Нужно для прижатия футера к низу*/
-    /*padding: 5px 0;*/
+    min-height: 100%;
 }
 
 /*----------------------------section services begin-----------------------------*/
@@ -469,7 +470,6 @@ nav section {
 }
 
 .iso span {
-    /*    font-size: 1.625em;!*26/16*!*/
     font-size: 1.25em; /*20/16*/
     font-style: italic;
     display: block;
@@ -555,13 +555,12 @@ nav section {
 }
 
 .brands-list.active {
-    display: block; /* по умолчанию показываем нужный блок */
+    display: block;
 }
 
 .brands-list li {
     list-style: none;
     width: 33.333%;
-    /* display: inline-block;*/
     display: block;
     float: left;
     margin-top: 85px;
@@ -616,20 +615,15 @@ nav section {
 
 /*----------------------------section brands end-----------------------------*/
 /*---------------------------Begin Footer----------------------------------*/
-/*footer {
-    margin: -220px auto 0;
-    width: 100%;
-    min-width: 240px;
-    height: 220px;
-    background: #AFBFC6;
-    position: relative;
-}*/
 footer {
     position: relative;
     background-color: #000000;
     width: 100%;
     height: 150px;
     color: #ffffff;
+    max-width: 1600px;
+    margin: 0 auto;
+
 }
 
 footer li {
@@ -767,11 +761,6 @@ footer li a {
         display: block;
     }
 
-    /*nav section {
-        left: 0%;
-        margin-left: 0;
-        bottom: 60%;
-    }*/
     .request {
         display: block;
         left: 0%;
@@ -932,8 +921,6 @@ footer li a {
 
     .certificate {
         float: none;
-        /*   width: 180px;
-           margin: 0 auto;*/
         padding: 0;
     }
 

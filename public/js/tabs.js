@@ -7,10 +7,11 @@ $(document).ready(function () {
     });
 
     /*$('.tabs-list li').hasClass('active', function() {
-        $(".active>.arrow-top").css("display", "block");
-    })*/
-    $(".accordion .accord-header").click(function() {
-        if($(this).next("div").is(":visible")){
+     $(".active>.arrow-top").css("display", "block");
+     })*/
+    /*accordion*/
+    $(".accordion .accord-header").click(function () {
+        if ($(this).next("div").is(":visible")) {
             $(this).next("div").slideUp("slow");
         } else {
             $(".accordion .accord-content").slideUp("slow");
@@ -23,8 +24,8 @@ $(document).ready(function () {
         $('.side-menu').slideToggle();
         $(this).toggleClass("active");
     })
-    /*zoom*/
 
+    /*zoom*/
     $(".certificate-image").on('click', function () {    // Событие клика на маленькое изображение
         var img = $(this);    // Получаем изображение, на которое кликнули
         var src = img.attr('src'); // Достаем из этого изображения путь до картинки
