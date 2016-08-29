@@ -329,14 +329,14 @@ nav section {
     position: relative;
 }
 
-.up a {
+.up1, .up2 {
     background-image: url('../img/up.png');
     width: 19px;
     height: 17px;
     display: inline-block;
 }
 
-.down a {
+.down1, .down2 {
     background-image: url('../img/down.png');
     width: 19px;
     height: 17px;
@@ -675,6 +675,35 @@ footer li a {
     height: auto;
 }
 
+/*style for sliders*/
+.slider-container {
+    position: relative;
+    background-color: #fff;
+    height: 283px;
+    width: 283px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slides1, .slides2 {
+    height: 100%;
+    position: relative;
+}
+
+.slides1 li, .slides2 li {
+    background-color: #ecf0f1;
+    display: table;
+    float: left;
+    height: 100%;
+}
+
+.slides1 li img, .slides2 li img {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 3em;
+}
+
 /*----------------------Footer end-----------------------*/
 /* Displaying on devices with width more 1024px*/
 @media screen and (min-width: 1024px) {
@@ -844,27 +873,28 @@ footer li a {
         padding: 0;
     }
 
-    .up a {
+    .up1, .up2 {
         background-image: url('../img/left.png');
         width: 18px;
         height: 19px;
         display: inline-block;
     }
 
-    .down a {
+    .down1, .down2 {
         background-image: url('../img/right.png');
         width: 18px;
         height: 19px;
         display: inline-block;
     }
 
-    .up {
+    .up1, .up2 {
         position: absolute;
         left: 50%;
         margin: 30% 0 0 -42%;
+        z-index: 100;
     }
 
-    .down {
+    .down1, .down2 {
         position: absolute;
         right: 50%;
         margin: -38% -42% 0 0;
@@ -1006,8 +1036,11 @@ footer li a {
         font-size: 15px;
         margin-top: 15px;
     }
-}
 
+    .slider-container {
+        height: 215px;
+    }
+}
 
 
 
