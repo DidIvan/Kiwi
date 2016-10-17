@@ -1,0 +1,29 @@
+body {
+
+}
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Displaying on devices with width range till 1200px(large devices)*/
+@media screen and (max-width: 1200px){
+
+}
+/* Displaying on devices with width range till 992px(medium devices, desktops)*/
+@media screen and (max-width: 992px){
+
+}
+/* Displaying on devices with width range till 767px(small devices, tablets)*/
+@media screen and (max-width: 767px){
+
+}
+/* Displaying on devices with width range till 480px(extra small devices, phones)*/
+@media screen and (max-width: 480px){
+
+}
+
+
+
+
+
